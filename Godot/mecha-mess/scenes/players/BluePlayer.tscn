@@ -1,0 +1,43 @@
+[gd_scene load_steps=5 format=3 uid="uid://bi12vtjbt4l6g"]
+
+[ext_resource type="Script" uid="uid://bjoe6knwogb4v" path="res://scripts/players/blue_player.gd" id="1_kdffm"]
+[ext_resource type="Texture2D" uid="uid://dmd2dagdlyidw" path="res://icon.svg" id="2_vt3e1"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1jvy5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_vt3e1")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kdffm"]
+size = Vector2(13.546664, 34)
+
+[node name="BluePlayer" type="CharacterBody2D"]
+script = ExtResource("1_kdffm")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1.5000014, -6.999998)
+scale = Vector2(0.117187485, 0.26562503)
+sprite_frames = SubResource("SpriteFrames_1jvy5")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.5000002, -7)
+scale = Vector2(1.1072837, 1)
+shape = SubResource("RectangleShape2D_kdffm")
+
+[node name="WallCheck" type="RayCast2D" parent="."]
+target_position = Vector2(20, 0)
+
+[node name="FloorCheck" type="RayCast2D" parent="."]
+target_position = Vector2(0, 20)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
+limit_enabled = false
+position_smoothing_enabled = true
