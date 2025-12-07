@@ -22,10 +22,10 @@ shape = SubResource("CapsuleShape2D_osnko")
 [node name="FloorCheck" type="RayCast2D" parent="BluePlayer"]
 target_position = Vector2(0, 22)
 
-[node name="WallCheckRight" type="RayCast2D" parent="BluePlayer"]
+[node name="WallCheckR" type="RayCast2D" parent="BluePlayer"]
 target_position = Vector2(20, 0)
 
-[node name="WallCheckLeft" type="RayCast2D" parent="BluePlayer"]
+[node name="WallCheckL" type="RayCast2D" parent="BluePlayer"]
 target_position = Vector2(-20, 0)
 
 [node name="Camera2D" type="Camera2D" parent="BluePlayer"]
