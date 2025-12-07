@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddb3jtv214n6j"
-path="res://.godot/imported/Block-lab.png-11ceb9ce7c44ffd9144106296a373857.ctex"
+uid="uid://b4efawfgphw7x"
+path="res://.godot/imported/Block-lab-red.png-1fa339dcd9adb0d4fdb2f71fab17622d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Block-lab.png"
-dest_files=["res://.godot/imported/Block-lab.png-11ceb9ce7c44ffd9144106296a373857.ctex"]
+source_file="res://assets/sprites/Levels/The lab/Block-lab-red.png"
+dest_files=["res://.godot/imported/Block-lab-red.png-1fa339dcd9adb0d4fdb2f71fab17622d.ctex"]
 
 [params]
 

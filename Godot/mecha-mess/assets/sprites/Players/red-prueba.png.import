@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0m8rwsyfb7h1"
-path="res://.godot/imported/block-lab-blue.png-b9b5e1c519bbdc64b4c67459c5d63078.ctex"
+uid="uid://cm8pfsxrltiew"
+path="res://.godot/imported/red-prueba.png-b8c80cb7f49d2dff9932689898d1b0b6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/block-lab-blue.png"
-dest_files=["res://.godot/imported/block-lab-blue.png-b9b5e1c519bbdc64b4c67459c5d63078.ctex"]
+source_file="res://assets/sprites/Players/red-prueba.png"
+dest_files=["res://.godot/imported/red-prueba.png-b8c80cb7f49d2dff9932689898d1b0b6.ctex"]
 
 [params]
 

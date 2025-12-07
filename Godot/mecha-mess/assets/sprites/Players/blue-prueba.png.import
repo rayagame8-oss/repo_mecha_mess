@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cm8pfsxrltiew"
-path="res://.godot/imported/red-prueba.png-26534c1ef74f4b5b2063d08b404d64c3.ctex"
+uid="uid://splpoocuga7e"
+path="res://.godot/imported/blue-prueba.png-be7a9687e7f8b993c84174f19384eb1a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/red-prueba.png"
-dest_files=["res://.godot/imported/red-prueba.png-26534c1ef74f4b5b2063d08b404d64c3.ctex"]
+source_file="res://assets/sprites/Players/blue-prueba.png"
+dest_files=["res://.godot/imported/blue-prueba.png-be7a9687e7f8b993c84174f19384eb1a.ctex"]
 
 [params]
 

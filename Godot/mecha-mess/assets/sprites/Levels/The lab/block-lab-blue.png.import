@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://splpoocuga7e"
-path="res://.godot/imported/blue-prueba.png-7fb82c1a68b1b0a8ca6c07cbb80ec027.ctex"
+uid="uid://b0m8rwsyfb7h1"
+path="res://.godot/imported/block-lab-blue.png-b89cc1f5071a56cc95a0f47a75bc5bde.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/blue-prueba.png"
-dest_files=["res://.godot/imported/blue-prueba.png-7fb82c1a68b1b0a8ca6c07cbb80ec027.ctex"]
+source_file="res://assets/sprites/Levels/The lab/block-lab-blue.png"
+dest_files=["res://.godot/imported/block-lab-blue.png-b89cc1f5071a56cc95a0f47a75bc5bde.ctex"]
 
 [params]
 
