@@ -1,14 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://bi12vtjbt4l6g"]
+[gd_scene load_steps=4 format=3 uid="uid://bi12vtjbt4l6g"]
 
 [ext_resource type="Script" uid="uid://bjoe6knwogb4v" path="res://scripts/players/blue_player.gd" id="1_kdffm"]
-[ext_resource type="Texture2D" uid="uid://dmd2dagdlyidw" path="res://icon.svg" id="2_vt3e1"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_1jvy5"]
 animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("2_vt3e1")
-}],
+"frames": [],
 "loop": true,
 "name": &"idle",
 "speed": 5.0
