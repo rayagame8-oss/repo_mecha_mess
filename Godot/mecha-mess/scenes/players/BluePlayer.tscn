@@ -1,17 +1,21 @@
-[gd_scene load_steps=4 format=3 uid="uid://bi12vtjbt4l6g"]
+[gd_scene load_steps=5 format=3 uid="uid://bi12vtjbt4l6g"]
 
 [ext_resource type="Script" uid="uid://bjoe6knwogb4v" path="res://scripts/players/blue_player.gd" id="1_kdffm"]
+[ext_resource type="Texture2D" uid="uid://splpoocuga7e" path="res://assets/sprites/blue-prueba.png" id="2_vt3e1"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_1jvy5"]
 animations = [{
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_vt3e1")
+}],
 "loop": true,
 "name": &"idle",
 "speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kdffm"]
-size = Vector2(13.546664, 34)
+size = Vector2(24.383995, 60)
 
 [node name="BluePlayer" type="CharacterBody2D"]
 script = ExtResource("1_kdffm")
@@ -23,7 +27,7 @@ sprite_frames = SubResource("SpriteFrames_1jvy5")
 animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1.5000002, -7)
+position = Vector2(1.4999998, -7)
 scale = Vector2(1.1072837, 1)
 shape = SubResource("RectangleShape2D_kdffm")
 
