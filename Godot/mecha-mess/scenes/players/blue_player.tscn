@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=3 uid="uid://b34rrfnang48y"]
+
+[ext_resource type="Script" uid="uid://bjoe6knwogb4v" path="res://scripts/players/blue_player.gd" id="1_agwpg"]
+[ext_resource type="Texture2D" uid="uid://splpoocuga7e" path="res://assets/sprites/Players/blue-prueba.png" id="2_a7888"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_de0ac"]
+height = 48.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hw2i3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_a7888")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="BluePlayer" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+scale = Vector2(3.8400006, 3.64)
+script = ExtResource("1_agwpg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("CapsuleShape2D_de0ac")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D/CollisionShape2D"]
+position = Vector2(0, 5.9604645e-08)
+scale = Vector2(0.08611113, 0.19444442)
+sprite_frames = SubResource("SpriteFrames_hw2i3")
+animation = &"idle"
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D/CollisionShape2D/AnimatedSprite2D"]
+scale = Vector2(3.7871032, 2.6457143)
+
+[node name="Wallcheck" type="RayCast2D" parent="CharacterBody2D"]
+target_position = Vector2(17, 0)
+
+[node name="Floorcheck" type="RayCast2D" parent="CharacterBody2D"]
+target_position = Vector2(0, 32)
