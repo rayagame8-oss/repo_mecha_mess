@@ -13,6 +13,9 @@ position = Vector2(444, 303)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(60, 16)
 shape = SubResource("RectangleShape2D_yautc")
+debug_color = Color(0, 0.6, 0.69803923, 0.99607843)
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="StaticBody2D"]
 
 [node name="BluePlayer" parent="." instance=ExtResource("1_jbqir")]
 position = Vector2(10, -30)
