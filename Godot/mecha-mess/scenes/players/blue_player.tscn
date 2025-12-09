@@ -9,6 +9,7 @@
 metadata/_edit_horizontal_guides_ = [-39.0]
 
 [node name="BluePlayer" type="CharacterBody2D" parent="."]
+collision_mask = 3
 script = ExtResource("1_agwpg")
 
 [node name="Sprite2D" type="Sprite2D" parent="BluePlayer"]

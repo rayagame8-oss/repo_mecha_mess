@@ -1,0 +1,33 @@
+[gd_resource type="TileSet" load_steps=7 format=3 uid="uid://rravtlvy54vq"]
+
+[ext_resource type="Texture2D" uid="uid://b0m8rwsyfb7h1" path="res://assets/sprites/Levels/The lab/block-lab-blue.png" id="1_sr55g"]
+[ext_resource type="Texture2D" uid="uid://b4efawfgphw7x" path="res://assets/sprites/Levels/The lab/Block-lab-red.png" id="2_pxe6m"]
+[ext_resource type="Texture2D" uid="uid://ddb3jtv214n6j" path="res://assets/sprites/Levels/The lab/Block-lab.png" id="3_yry6a"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1dm6k"]
+texture = ExtResource("1_sr55g")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+0:0/0/custom_data_0 = true
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cju86"]
+texture = ExtResource("2_pxe6m")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kfhtp"]
+texture = ExtResource("3_yry6a")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+
+[resource]
+tile_size = Vector2i(32, 32)
+physics_layer_0/collision_layer = 1
+custom_data_layer_0/name = "blue"
+custom_data_layer_0/type = 1
+sources/0 = SubResource("TileSetAtlasSource_1dm6k")
+sources/1 = SubResource("TileSetAtlasSource_cju86")
+sources/2 = SubResource("TileSetAtlasSource_kfhtp")
