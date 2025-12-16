@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://b34rrfnang48y"]
 
-[ext_resource type="Script" uid="uid://csd3ddyuyt3it" path="res://scenes/players/blue_player.gd" id="1_agwpg"]
+[ext_resource type="Script" uid="uid://csd3ddyuyt3it" path="res://scripts/players/blue_player.gd" id="1_agwpg"]
 [ext_resource type="Texture2D" uid="uid://splpoocuga7e" path="res://assets/sprites/Players/blue-prueba.png" id="2_a7888"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_osnko"]

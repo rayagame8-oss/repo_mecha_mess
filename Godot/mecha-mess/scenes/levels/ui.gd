@@ -1,28 +1,43 @@
 extends CanvasLayer
 
-@onready var hearts = $Hearts
+@onready var hearts: TextureRect = $Hearts
 
-# Vida compartida
+# =====================
+# VIDA COMPARTIDA
+# =====================
 @export var max_health := 3
 var health := 3
 
-# Sprites de corazones
+# =====================
+# SPRITES DE CORAZONES
+# =====================
 @export var hearts_3: Texture2D
 @export var hearts_2: Texture2D
 @export var hearts_1: Texture2D
 @export var hearts_0: Texture2D
 
-# Checkpoint
-var checkpoint_position := Vector2.ZERO
+# =====================
+# CHECKPOINT
+# =====================
+var checkpoint_position: Vector2 = Vector2.ZERO
 
+
+# =====================
+# READY
+# =====================
 func _ready():
 	print("UI / GAME MANAGER ACTIVO")
 	health = max_health
 	update_hearts()
 
 
-# === SISTEMA DE DAÑO ===
+# =====================
+# DAÑO
+# =====================
 func damage_player(player_node):
+	if not player_node:
+		return
+
 	health -= 1
 	health = clamp(health, 0, max_health)
 	update_hearts()
@@ -35,7 +50,9 @@ func damage_player(player_node):
 		respawn_player(player_node)
 
 
-# === ACTUALIZAR UI ===
+# =====================
+# ACTUALIZAR UI
+# =====================
 func update_hearts():
 	if not hearts:
 		return
@@ -51,21 +68,29 @@ func update_hearts():
 			hearts.texture = hearts_0
 
 
-# === RESPAWN ===
+# =====================
+# RESPAWN
+# =====================
 func respawn_player(player_node):
 	if checkpoint_position != Vector2.ZERO:
 		player_node.global_position = checkpoint_position
 	else:
 		player_node.global_position = player_node.start_position
 
+	player_node.velocity = Vector2.ZERO
 
-# === CHECKPOINT ===
+
+# =====================
+# CHECKPOINT
+# =====================
 func set_checkpoint(pos: Vector2):
 	checkpoint_position = pos
 	print("Checkpoint guardado en:", checkpoint_position)
 
 
-# === GAME OVER ===
+# =====================
+# GAME OVER
+# =====================
 func game_over():
 	print("GAME OVER")
 	get_tree().reload_current_scene()

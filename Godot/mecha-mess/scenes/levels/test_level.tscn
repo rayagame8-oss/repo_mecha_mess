@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://c32qpkpejhiqy" path="res://assets/sprites/Players/healt bar/heltbar_0.png" id="9_hfwtw"]
 [ext_resource type="Texture2D" uid="uid://cjuos6dvj0w5n" path="res://assets/sprites/Players/healt bar/heltbar_3.png" id="9_jmx14"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2mu0v"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hfwtw"]
 texture = ExtResource("6_hfwtw")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
@@ -25,7 +25,7 @@ texture_region_size = Vector2i(32, 32)
 [sub_resource type="TileSet" id="TileSet_jmx14"]
 tile_size = Vector2i(32, 32)
 physics_layer_0/collision_layer = 2
-sources/1 = SubResource("TileSetAtlasSource_2mu0v")
+sources/1 = SubResource("TileSetAtlasSource_hfwtw")
 
 [node name="Test_Level" type="Node2D"]
 
@@ -40,16 +40,17 @@ tile_set = ExtResource("1_cyt5c")
 [node name="TileMapTrampas" type="TileMapLayer" parent="Frontground"]
 position = Vector2(-1.9999998, 3)
 scale = Vector2(0.43684897, 0.35478482)
-tile_map_data = PackedByteArray("AAATAP//AQAAAAAAAAAUAP//AQAAAAAAAAAVAP//AQAAAAAAAAAYAP//AQAAAAAAAAAZAP//AQAAAAAAAAAaAP//AQAAAAAAAAAdAP//AQAAAAAAAAAeAP//AQAAAAAAAAAfAP//AQAAAAAAAAAiAP//AQAAAAAAAAAjAP//AQAAAAAAAAAkAP//AQAAAAAAAAA=")
+tile_map_data = PackedByteArray("AAATAP//AQAAAAAAAAAVAP//AQAAAAAAAAAYAP//AQAAAAAAAAAZAP//AQAAAAAAAAAaAP//AQAAAAAAAAAdAP//AQAAAAAAAAAeAP//AQAAAAAAAAAfAP//AQAAAAAAAAAiAP//AQAAAAAAAAAjAP//AQAAAAAAAAAkAP//AQAAAAAAAAAUAP//AQAAAAAAAAA=")
 tile_set = SubResource("TileSet_jmx14")
 
 [node name="GameManager" parent="Frontground" instance=ExtResource("7_2mu0v")]
 position = Vector2(191, 116)
+script = null
 
 [node name="BluePlayer" parent="." instance=ExtResource("4_cyt5c")]
 position = Vector2(-19, 14)
 
-[node name="UI" type="CanvasLayer" parent="." groups=["ui"]]
+[node name="UI" type="CanvasLayer" parent="."]
 script = ExtResource("5_7x1jh")
 hearts_3 = ExtResource("9_jmx14")
 hearts_2 = ExtResource("6_7x1jh")
@@ -57,7 +58,8 @@ hearts_1 = ExtResource("7_hfwtw")
 hearts_0 = ExtResource("9_hfwtw")
 
 [node name="Hearts" type="TextureRect" parent="UI"]
-offset_right = 40.0
-offset_bottom = 40.0
+custom_minimum_size = Vector2(16, 16)
+offset_right = 64.0
+offset_bottom = 32.0
 texture = ExtResource("9_jmx14")
-stretch_mode = 4
+stretch_mode = 2
